@@ -1,0 +1,109 @@
+/* Background and form container styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #a8e6cf, #dcedc1, #ff8b94, #d9a7c7); /* Pastel shades: blue, green, pink, purple */
+    background-size: 400% 400%; /* Animate the gradient */
+    animation: gradientBG 15s ease infinite; /* Slow background animation */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Animation to smoothly shift the gradient */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Center align the signup container */
+.signup-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    backdrop-filter: blur(10px); /* Adds a blur effect */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out; /* Fade-in effect */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.signup-container h2 {
+    text-align: center;
+    color: #4a4e69;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+.signup-container input {
+    width: 95%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+    font-size: 1rem;
+}
+
+/* Input field focus effect */
+.signup-container input:focus {
+    border-color: #4a4e69;
+    outline: none;
+}
+
+/* Button styling */
+.signup-container button {
+    width: 40%;
+    padding: 12px;
+    background: linear-gradient(135deg, #4a4e69, #22223b); /* Gradient button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+.signup-container button:hover {
+    background: linear-gradient(135deg, #22223b, #4a4e69);
+    transform: translateY(-3px); /* Button "lift" effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Button click effect */
+.signup-container button:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
+/* Add a cool text-shadow to the heading */
+.signup-container h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}

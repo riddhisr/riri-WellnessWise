@@ -1,0 +1,21 @@
+DoctorAppointments.css
+.appointments-container {
+    margin-top: 20px;
+}
+
+.appointments-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.appointments-table th, .appointments-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.appointments-table th {
+    background-color: #4a4e69;
+    color: white;
+}

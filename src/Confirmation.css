@@ -1,0 +1,19 @@
+Confirmation.css
+.confirmation-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    text-align: center;
+}
+
+.confirmation-container h2 {
+    color: #4a4e69;
+}
+
+.confirmation-container p {
+    margin: 10px 0;
+    color: #555;
+}
